@@ -21,6 +21,7 @@
     "nets": "^2.0.0",
     "observ": "^0.2.0",
     "run-parallel": "^1.0.0",
+    "seed-random": "^2.2.0",
     "vkey": "^1.0.0",
     "watchify": "^2.2.1",
     "webaudio": "^2.0.0",

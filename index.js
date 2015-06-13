@@ -2,6 +2,7 @@ var ws = require('websocket-stream')
 var vkey = require('vkey')
 var nets = require('nets')
 var parallel = require('run-parallel')
+var seed = require('seed-random');
 
 var keyNames = require('./config/keyNames');
 
@@ -81,7 +82,7 @@ function downloadAudio(id, url, cb){
     context.decodeAudioData(buff.buffer, function(buffer) {
       samples[id] = url
       persistConfig()
-      
+
       buffers[id] = buffer
       cb()
     }, cb)
